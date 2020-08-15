@@ -29,6 +29,7 @@ dependencies {
     implementation Libs.constraint_layout
     implementation Libs.kotlin_std
     implementation Libs.ktx
+    implementation Libs.material
 
     testImplementation TestLibs.junit
 

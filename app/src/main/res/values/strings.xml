@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">qarejet-android</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="records">Records</string>
+    <string name="stats">Stats</string>
+    <string name="settings">Settings</string>
 </resources>

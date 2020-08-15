@@ -16,13 +16,15 @@ object Versions {
     const val junit = "4.12"
     const val kotlin = "1.3.72"
     const val ktx = "1.3.1"
+    const val material = "1.2.0"
 }
 
 object Libs {
-    const val kotlin_std = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
-    const val ktx = "androidx.core:core-ktx:${Versions.ktx}"
     const val constraint_layout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout}"
+    const val kotlin_std = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
+    const val ktx = "androidx.core:core-ktx:${Versions.ktx}"
+    const val material = "com.google.android.material:material:${Versions.material}"
 }
 
 object TestLibs {

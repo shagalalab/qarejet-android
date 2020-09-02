@@ -10,21 +10,31 @@ object Android {
 object Versions {
     const val appcompat = "1.2.0"
     const val constraint_layout = "1.1.3"
+    const val coroutines = "1.3.9"
     const val espresso_core = "3.2.0"
     const val ext_junit = "1.1.1"
     const val gradle = "4.0.1"
     const val junit = "4.12"
-    const val kotlin = "1.3.72"
+    const val kotlin = "1.4.0"
     const val ktx = "1.3.1"
+    const val lifecycle = "2.1.0"
     const val material = "1.2.0"
+}
+
+object Modules {
+    const val core_usf = ":core-usf"
+    const val core_utils = ":core-utils"
 }
 
 object Libs {
     const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
     const val constraint_layout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout}"
+    const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
     const val kotlin_std = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     const val ktx = "androidx.core:core-ktx:${Versions.ktx}"
+    const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
     const val material = "com.google.android.material:material:${Versions.material}"
+    const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
 }
 
 object TestLibs {

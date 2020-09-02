@@ -15,6 +15,7 @@ object Versions {
     const val ext_junit = "1.1.1"
     const val gradle = "4.0.1"
     const val junit = "4.12"
+    const val koin = "2.1.6"
     const val kotlin = "1.4.0"
     const val ktx = "1.3.1"
     const val lifecycle = "2.1.0"
@@ -22,6 +23,7 @@ object Versions {
 }
 
 object Modules {
+    const val core_prefs = ":core-prefs"
     const val core_usf = ":core-usf"
     const val core_utils = ":core-utils"
 }
@@ -30,6 +32,8 @@ object Libs {
     const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
     const val constraint_layout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout}"
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val koin = "org.koin:koin-android:${Versions.koin}"
+    const val koin_viewmodel = "org.koin:koin-androidx-viewmodel:${Versions.koin}"
     const val kotlin_std = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     const val ktx = "androidx.core:core-ktx:${Versions.ktx}"
     const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"

@@ -1,3 +1,4 @@
 include ':app'
+include ':core-prefs'
 include ':core-utils'
 rootProject.name = "qarejet-android"

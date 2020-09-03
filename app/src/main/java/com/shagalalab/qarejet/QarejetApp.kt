@@ -1,6 +1,7 @@
 package com.shagalalab.qarejet
 
 import android.app.Application
+import com.shagalalab.core.data.di.CoreData
 import com.shagalalab.core.prefs.di.CorePrefs
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -14,9 +15,12 @@ class QarejetApp : Application() {
         startKoin {
             androidLogger()
             androidContext(this@QarejetApp)
-            modules(listOf(
-                CorePrefs.module
-            ))
+            modules(
+                listOf(
+                    CoreData.module,
+                    CorePrefs.module
+                )
+            )
         }
     }
 }

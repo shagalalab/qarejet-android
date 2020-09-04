@@ -1,0 +1,10 @@
+apply plugin: 'com.android.library'
+apply from: '../library.gradle'
+
+dependencies {
+    implementation project(Modules.core_utils)
+
+    implementation Libs.coroutines
+    implementation Libs.lifecycle
+    implementation Libs.viewmodel
+}

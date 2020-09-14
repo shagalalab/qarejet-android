@@ -26,6 +26,7 @@ object Versions {
 object Modules {
     const val core_data = ":core-data"
     const val core_prefs = ":core-prefs"
+    const val core_resources = ":core-resources"
     const val core_usf = ":core-usf"
     const val core_utils = ":core-utils"
 }

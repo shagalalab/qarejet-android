@@ -15,7 +15,7 @@ object Versions {
     const val ext_junit = "1.1.1"
     const val gradle = "4.0.1"
     const val junit = "4.12"
-    const val koin = "2.1.6"
+    const val koin = "2.2.0-beta-1"
     const val kotlin = "1.4.0"
     const val ktx = "1.3.1"
     const val lifecycle = "2.1.0"
@@ -42,6 +42,7 @@ object Libs {
     const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
     const val material = "com.google.android.material:material:${Versions.material}"
     const val room = "androidx.room:room-runtime:${Versions.room}"
+    const val room_compiler = "androidx.room:room-compiler:${Versions.room}"
     const val room_ktx = "androidx.room:room-ktx:${Versions.room}"
     const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
 }

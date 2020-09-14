@@ -5,6 +5,4 @@ data class Account(
     val title: String,
     val currency: String,
     val sign: String = ""
-) {
-    override fun toString() = title
-}
+)

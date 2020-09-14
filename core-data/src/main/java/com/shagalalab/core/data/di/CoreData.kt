@@ -16,12 +16,11 @@ import org.koin.dsl.module
 object CoreData {
     val module = module {
         single {
-            Room.databaseBuilder(androidContext(), QarejetDatabase::class.java, "qarejet.db")
-                .build()
+            Room.databaseBuilder(androidContext(), QarejetDatabase::class.java, "qarejet.db").build()
         }
+        factory<ConfigRepository> { ConfigRepositoryImpl(get()) }
         single<AccountRepository> { AccountRepositoryImpl(get()) }
         single<CategoryRepository> { CategoryRepositoryImpl(get()) }
-        single<ConfigRepository> { ConfigRepositoryImpl(get()) }
         single<TransactionRepository> { TransactionRepositoryImpl(get()) }
     }
 }

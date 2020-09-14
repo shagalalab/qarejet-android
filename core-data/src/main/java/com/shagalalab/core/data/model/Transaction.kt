@@ -14,3 +14,9 @@ enum class TransactionType {
     INCOME,
     EXPENSE
 }
+
+enum class Currency(val code: String) {
+    UZBEK_SUM("UZS"),
+    US_DOLLAR("USD"),
+    RUSSIAN_ROUBLE("RUB"),
+}

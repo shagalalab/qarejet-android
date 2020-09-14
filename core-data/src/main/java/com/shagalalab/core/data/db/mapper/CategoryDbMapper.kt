@@ -9,7 +9,7 @@ internal object CategoryDbMapper {
     }
 
     fun mapCategoryFromDb(dbModel: CategoryDbModel): Category {
-        return Category(dbModel.id, dbModel.title, dbModel.icon, dbModel.color, dbModel.type)
+        return Category(dbModel.id, dbModel.title, dbModel.type)
     }
 
     fun mapCategoriesListToDb(models: List<Category>): List<CategoryDbModel> {
@@ -19,8 +19,6 @@ internal object CategoryDbMapper {
     fun mapCategoryToDb(model: Category): CategoryDbModel {
         return CategoryDbModel(
             title = model.title,
-            icon = model.icon,
-            color = model.color,
             type = model.type
         )
     }

@@ -1,9 +1,11 @@
 apply plugin: 'com.android.library'
 apply from: '../library.gradle'
+apply plugin: 'kotlin-kapt'
 
 dependencies {
     implementation Libs.coroutines
     implementation Libs.koin
     implementation Libs.room
     implementation Libs.room_ktx
+    kapt Libs.room_compiler
 }

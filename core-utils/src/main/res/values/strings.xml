@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_cash">Cash</string>
+    <string name="account_card">Card</string>
+
+    <string name="category_expense_food">Food</string>
+    <string name="category_expense_leisure">Leisure</string>
+    <string name="category_expense_education">Education</string>
+    <string name="category_expense_shopping">Shopping</string>
+    <string name="category_expense_transport">Transportation</string>
+    <string name="category_expense_bills">Bills/Utilities</string>
+    <string name="category_expense_health">Health</string>
+    <string name="category_expense_vehicle">Vehicle</string>
+    <string name="category_expense_other">Other</string>
+
+    <string name="category_income_salary">Salary</string>
+    <string name="category_income_gift">Gift</string>
+    <string name="category_income_rental">Rental Income</string>
+    <string name="category_income_sale">Sale</string>
+    <string name="category_income_interest">Interest/Dividend</string>
+    <string name="category_income_other">Other</string>
+</resources>

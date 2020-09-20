@@ -22,16 +22,30 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 }
 
 dependencies {
     implementation project(Modules.core_data)
     implementation project(Modules.core_prefs)
+    implementation project(Modules.core_utils)
+    implementation project(Modules.feature_splash)
+
     implementation Libs.appcompat
     implementation Libs.constraint_layout
+    implementation Libs.coroutines
     implementation Libs.koin
     implementation Libs.kotlin_std
     implementation Libs.ktx
+    implementation Libs.lifecycle
     implementation Libs.material
 
     testImplementation TestLibs.junit

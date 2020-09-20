@@ -4,4 +4,5 @@ include ':core-prefs'
 include ':core-resources'
 include ':core-usf'
 include ':core-utils'
+include ':feature-splash'
 rootProject.name = "qarejet-android"

@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply from: '../library.gradle'
+
+dependencies {
+    implementation project(Modules.core_data)
+    implementation project(Modules.core_usf)
+    implementation project(Modules.core_utils)
+
+    implementation Libs.appcompat
+    implementation Libs.coroutines
+    implementation Libs.koin
+    implementation Libs.koin_viewmodel
+    implementation Libs.viewmodel
+}

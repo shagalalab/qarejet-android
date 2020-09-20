@@ -29,6 +29,7 @@ object Modules {
     const val core_resources = ":core-resources"
     const val core_usf = ":core-usf"
     const val core_utils = ":core-utils"
+    const val feature_splash = ":feature-splash"
 }
 
 object Libs {

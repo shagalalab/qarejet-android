@@ -4,6 +4,7 @@ import android.app.Application
 import com.shagalalab.core.data.di.CoreData
 import com.shagalalab.core.prefs.di.CorePrefs
 import com.shagalalab.feature.splash.di.FeatureSplash
+import com.shagalalab.qarejet.di.App
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 import org.koin.android.ext.koin.androidContext
@@ -24,7 +25,8 @@ class QarejetApp : Application() {
                 listOf(
                     CoreData.module,
                     CorePrefs.module,
-                    FeatureSplash.module
+                    FeatureSplash.module,
+                    App.module
                 )
             )
         }

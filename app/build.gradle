@@ -48,6 +48,8 @@ dependencies {
     implementation Libs.ktx
     implementation Libs.lifecycle
     implementation Libs.material
+    implementation Libs.navigation_fragment
+    implementation Libs.navigation_ui
 
     testImplementation TestLibs.junit
 

@@ -17,17 +17,11 @@ internal class CheckDataPopulatedUseCase(
 ) : UseCase<Resource<Boolean>> {
 
     override suspend fun execute(): Resource<Boolean> {
-        return if (!configRepository.checkInitialDataPopulated()) {
-            try {
-                accountRepository.addAccounts(defaultAccounts)
-                categoryRepository.addCategories(defaultCategories)
-                configRepository.setInitialDataPopulated()
-                Resource.success(true)
-            } catch (e: Exception) {
-                Resource.error("Couldn't add default accounts and categories")
-            }
-        } else {
-            Resource.success(true)
+        if (!configRepository.checkInitialDataPopulated()) {
+            accountRepository.addAccounts(defaultAccounts)
+            categoryRepository.addCategories(defaultCategories)
+            configRepository.setInitialDataPopulated()
         }
+        return Resource.success(true)
     }
 }

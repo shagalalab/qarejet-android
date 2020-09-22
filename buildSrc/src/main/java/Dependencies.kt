@@ -20,6 +20,7 @@ object Versions {
     const val ktx = "1.3.1"
     const val lifecycle = "2.1.0"
     const val material = "1.2.0"
+    const val navigation = "2.3.0"
     const val room = "2.2.5"
 }
 
@@ -42,6 +43,8 @@ object Libs {
     const val ktx = "androidx.core:core-ktx:${Versions.ktx}"
     const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
     const val material = "com.google.android.material:material:${Versions.material}"
+    const val navigation_fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigation_ui = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val room = "androidx.room:room-runtime:${Versions.room}"
     const val room_compiler = "androidx.room:room-compiler:${Versions.room}"
     const val room_ktx = "androidx.room:room-ktx:${Versions.room}"

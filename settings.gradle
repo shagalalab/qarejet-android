@@ -7,4 +7,5 @@ include ':core-utils'
 include ':feature-records'
 include ':feature-splash'
 include ':feature-stats'
+include ':feature-transaction'
 rootProject.name = "qarejet-android"

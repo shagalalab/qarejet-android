@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.shagalalab.qarejet.presentation.DashboardFragment"
+        android:label="DashboardFragment" />
+
+    <fragment
+        android:id="@+id/records"
+        android:name="com.shagalalab.feature.records.presentation.RecordsFragment"
+        android:label="RecordsFragment"
+        tools:layout="@layout/fragment_records" />
+
+</navigation>

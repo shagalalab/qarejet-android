@@ -44,6 +44,7 @@ dependencies {
     implementation project(Modules.core_prefs)
     implementation project(Modules.core_utils)
     implementation project(Modules.feature_records)
+    implementation project(Modules.feature_stats)
     implementation project(Modules.feature_splash)
 
     implementation Libs.appcompat

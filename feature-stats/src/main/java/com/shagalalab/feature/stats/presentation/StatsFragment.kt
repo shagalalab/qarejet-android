@@ -1,4 +1,4 @@
-package com.example.feature.stats.presentation
+package com.shagalalab.feature.stats.presentation
 
 import androidx.fragment.app.Fragment
 import com.shagalalab.feature.stats.R

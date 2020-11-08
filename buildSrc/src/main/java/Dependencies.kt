@@ -32,6 +32,7 @@ object Modules {
     const val core_utils = ":core-utils"
     const val feature_records = ":feature-records"
     const val feature_splash = ":feature-splash"
+    const val feature_stats = ":feature-stats"
 }
 
 object Libs {

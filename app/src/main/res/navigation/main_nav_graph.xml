@@ -16,4 +16,10 @@
         android:label="RecordsFragment"
         tools:layout="@layout/fragment_records" />
 
+    <fragment
+        android:id="@+id/stats"
+        android:name="com.shagalalab.feature.stats.presentation.StatsFragment"
+        android:label="StatsFragment"
+        tools:layout="@layout/fragment_stats" />
+
 </navigation>

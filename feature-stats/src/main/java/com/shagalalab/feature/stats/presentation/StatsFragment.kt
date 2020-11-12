@@ -13,6 +13,7 @@ class StatsFragment : Fragment(R.layout.fragment_stats) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         statsTabLayout.getTabAt(Constants.TRANSACTION_TYPE_EXPENSE)?.select()
+
         statsTabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabReselected(tab: TabLayout.Tab?) {
             }
@@ -21,6 +22,7 @@ class StatsFragment : Fragment(R.layout.fragment_stats) {
             }
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
+                tvMessage.text = "${tab?.text} tab selected"
             }
         })
     }

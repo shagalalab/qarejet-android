@@ -13,7 +13,7 @@ object Versions {
     const val coroutines = "1.3.9"
     const val espresso_core = "3.2.0"
     const val ext_junit = "1.1.1"
-    const val gradle = "4.1.0"
+    const val gradle = "4.1.1"
     const val junit = "4.12"
     const val koin = "2.2.0-beta-1"
     const val kotlin = "1.4.10"

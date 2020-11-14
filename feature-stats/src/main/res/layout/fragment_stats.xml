@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light"
-    android:orientation="vertical">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:id="@+id/tvMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textAllCaps="true"
-        android:text="Expense tab selected" />
+    <data>
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/statsTabLayout"
-        style="@style/StatsTabLayout"
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="vertical">
 
-        <com.google.android.material.tabs.TabItem
+        <TextView
+            android:id="@+id/tvMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/income" />
+            android:layout_gravity="center"
+            android:text="Expense tab selected"
+            android:textAllCaps="true" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/expense" />
-    </com.google.android.material.tabs.TabLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/statsTabLayout"
+            style="@style/StatsTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income" />
 
-</FrameLayout>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expense" />
+        </com.google.android.material.tabs.TabLayout>
+    </FrameLayout>
+</layout>

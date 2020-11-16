@@ -1,6 +1,15 @@
 apply plugin: 'com.android.library'
 apply from: '../library.gradle'
 
+android {
+    buildFeatures {
+        viewBinding true
+    }
+}
+
 dependencies {
+    implementation project(Modules.core_resources)
+
     implementation Libs.appcompat
+    implementation Libs.material
 }

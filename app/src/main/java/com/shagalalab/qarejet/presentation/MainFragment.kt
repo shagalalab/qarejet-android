@@ -10,6 +10,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.setupWithNavController
 import com.shagalalab.qarejet.R
 import com.shagalalab.qarejet.databinding.FragmentMainBinding
+import kotlinx.android.synthetic.main.activity_root.*
 
 class MainFragment : Fragment() {
     private lateinit var fragmentMainBinding: FragmentMainBinding
@@ -29,8 +30,10 @@ class MainFragment : Fragment() {
         val navController = Navigation.findNavController(requireActivity(), R.id.mainNavHost)
         fragmentMainBinding.bottomNavigation.setupWithNavController(navController)
 
+        val rootNavController = Navigation.findNavController(requireActivity(),R.id.root_nav_host)
+
         fragmentMainBinding.homeBottomFab.setOnClickListener {
-            navController.navigate(R.id.action_mainFragment_to_newTransactionFragment)
+            rootNavController.navigate(R.id.action_mainFragment_to_newTransactionFragment)
         }
     }
 }

@@ -9,7 +9,7 @@
         android:id="@+id/tvMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity ="center"
         android:text="Expense tab selected"
         android:textAllCaps="true" />
 
@@ -29,4 +29,5 @@
             android:layout_height="wrap_content"
             android:text="@string/expense" />
     </com.google.android.material.tabs.TabLayout>
+
 </FrameLayout>

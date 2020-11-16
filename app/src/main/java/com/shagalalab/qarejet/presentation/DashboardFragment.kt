@@ -20,6 +20,7 @@ class DashboardFragment : Fragment() {
         val frameLayout = FrameLayout(context)
         val textView = TextView(context)
         textView.text = "Dashboard Fragment"
+
         frameLayout.addView(textView)
         frameLayout.setBackgroundColor(ContextCompat.getColor(context, R.color.amber))
         return frameLayout

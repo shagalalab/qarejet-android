@@ -28,5 +28,9 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val navController = Navigation.findNavController(requireActivity(), R.id.mainNavHost)
         fragmentMainBinding.bottomNavigation.setupWithNavController(navController)
+
+        fragmentMainBinding.homeBottomFab.setOnClickListener {
+            navController.navigate(R.id.action_mainFragment_to_newTransactionFragment)
+        }
     }
 }

@@ -3,12 +3,13 @@ apply from: '../library.gradle'
 
 android {
     buildFeatures {
-        dataBinding true
+        viewBinding true
     }
 }
 
 dependencies {
     implementation project(Modules.core_resources)
+
     implementation Libs.appcompat
     implementation Libs.material
 }

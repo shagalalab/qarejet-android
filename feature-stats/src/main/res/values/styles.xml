@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="StatsTabLayout" parent="Widget.Design.TabLayout">
-        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorColor">@color/color_accent</item>
         <item name="tabIndicatorHeight">4dp</item>
-        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabBackground">@color/color_primary</item>
         <item name="tabSelectedTextColor">@android:color/white</item>
         <item name="tabTextAppearance">@style/StatsTabTextAppearance</item>
     </style>

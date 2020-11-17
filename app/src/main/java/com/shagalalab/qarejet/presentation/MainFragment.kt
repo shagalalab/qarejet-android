@@ -30,7 +30,7 @@ class MainFragment : Fragment() {
         val navController = Navigation.findNavController(requireActivity(), R.id.mainNavHost)
         fragmentMainBinding.bottomNavigation.setupWithNavController(navController)
 
-        val rootNavController = Navigation.findNavController(requireActivity(),R.id.root_nav_host)
+        val rootNavController = Navigation.findNavController(requireActivity(), R.id.root_nav_host)
 
         fragmentMainBinding.homeBottomFab.setOnClickListener {
             rootNavController.navigate(R.id.action_mainFragment_to_newTransactionFragment)

@@ -10,7 +10,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.setupWithNavController
 import com.shagalalab.qarejet.R
 import com.shagalalab.qarejet.databinding.FragmentMainBinding
-import kotlinx.android.synthetic.main.activity_root.*
+
 
 class MainFragment : Fragment() {
     private lateinit var fragmentMainBinding: FragmentMainBinding

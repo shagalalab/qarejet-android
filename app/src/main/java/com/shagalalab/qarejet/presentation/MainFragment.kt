@@ -11,7 +11,6 @@ import androidx.navigation.ui.setupWithNavController
 import com.shagalalab.qarejet.R
 import com.shagalalab.qarejet.databinding.FragmentMainBinding
 
-
 class MainFragment : Fragment() {
     private lateinit var fragmentMainBinding: FragmentMainBinding
 

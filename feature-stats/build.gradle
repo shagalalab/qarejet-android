@@ -7,9 +7,18 @@ android {
     }
 }
 
-dependencies {
-    implementation project(Modules.core_resources)
+repositories {
+    maven { url 'https://jitpack.io' }
+}
 
+dependencies {
+    implementation project(Modules.core_data)
+    implementation project(Modules.core_resources)
+    implementation project(Modules.core_utils)
+
+    implementation Libs.mp_chart
     implementation Libs.appcompat
     implementation Libs.material
+    implementation Libs.joda
+    implementation Libs.coroutines
 }

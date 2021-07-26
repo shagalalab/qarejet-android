@@ -19,9 +19,11 @@ object Versions {
     const val kotlin = "1.4.10"
     const val ktx = "1.3.1"
     const val lifecycle = "2.1.0"
+    const val joda = "2.9.9.1"
     const val material = "1.2.0"
     const val navigation = "2.3.0"
     const val room = "2.2.5"
+    const val mp_android_chart = "v3.1.0"
 }
 
 object Modules {
@@ -51,6 +53,8 @@ object Libs {
     const val room_compiler = "androidx.room:room-compiler:${Versions.room}"
     const val room_ktx = "androidx.room:room-ktx:${Versions.room}"
     const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    const val mp_chart = "com.github.PhilJay:MPAndroidChart:${Versions.mp_android_chart}"
+    const val joda = "net.danlew:android.joda:${Versions.joda}"
 }
 
 object TestLibs {

@@ -29,4 +29,27 @@
             android:layout_height="wrap_content"
             android:text="@string/expense" />
     </com.google.android.material.tabs.TabLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chartsDistribution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 </FrameLayout>
